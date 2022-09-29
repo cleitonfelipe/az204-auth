@@ -1,13 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.Identity.Client;
-// See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Hello, World!");
 namespace az204_auth
 {
     public static class Program
     {
-        private const string _clientId = "cffcbee9-7b9e-41d2-95f7-1a3d38b12aef";
-        private const string _tenantId = "020fe8ea-a365-4d05-a118-38b8998b9245";
+        private const string _clientId = "APPLICATION_CLIENT_ID";
+        private const string _tenantId = "DIRECTORY_TENANT_ID";
         public static async Task Main(string[] args)
         {
             string[] scopes = { "user.read" };
